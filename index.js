@@ -155,12 +155,42 @@
 
 
 
-let nums = [2, 7, 7, 15];
+// let nums = [2, 7, 7, 15];
+// for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//         if (nums[i] == nums[j]) {
+//             console.log(true);
+//         }
+//     }
+// }
+// console.log(false)
+
+
+// const days = {
+//     '0': 'Ням гараг',
+//     '1': 'Даваа гараг',
+//     '2': 'Мягмар гараг',
+//     '3': 'Лхагва гараг',
+//     '4': 'Пүрэв гараг',
+//     '5': 'Баасан гараг',
+//     '6': 'Бямба гараг'
+// }
+
+// console.log(Object.entries(days));
+
+
+
+const nums = [2, 7, 11, 15];
+const target = 9;
+
+// not use nested loop
+
+const obj = {};
+
 for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-        if (nums[i] == nums[j]) {
-            console.log(true);
-        }
+    obj[target - nums[i]] = i
+
+    if (obj.hasOwnProperty(nums[i])){
+        console.log([obj[nums[i]], i]);
     }
 }
-console.log(false)
