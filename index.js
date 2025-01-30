@@ -335,19 +335,19 @@
 
 // 1
 
-const nums = [1,2,3,1];
-function containsDuplicate(nums) {
+// const nums = [1,2,3,1];
+// function containsDuplicate(nums) {
 
-for (let i = 0; i < nums.length; i++) {
-    for (let j = i+1; j < nums.length; j++) {
-        if (nums[i] == nums[j]) {
-            return true
-        } 
-        }
-    }    
-}
+// for (let i = 0; i < nums.length; i++) {
+//     for (let j = i+1; j < nums.length; j++) {
+//         if (nums[i] == nums[j]) {
+//             return true
+//         } 
+//         }
+//     }    
+// }
 
-containsDuplicate(nums = [1,2,3,1])
+// containsDuplicate(nums = [1,2,3,1])
 
 
 // jishee
@@ -370,3 +370,15 @@ containsDuplicate(nums = [1,2,3,1])
 // for (let i = 0; i < nums.length; i++) {
 
 // }
+
+
+
+// function fiveP(n) {
+//    n += n * 0.05
+// console.log(n);
+
+//     return n
+    
+// }
+
+// fiveP(1000)
